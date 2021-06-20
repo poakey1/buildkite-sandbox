@@ -8,3 +8,10 @@ services:
     working_dir: /work
     environment: 
         - JFROG_CLI_OFFER_CONFIG=false
+
+  buildkite-agent:
+    image: buildkite-agent-plus
+    volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+        - BUILDKITE_AGENT_TOKEN=927dcada0324cd357f5342486073fe70c1d98d7b3aaee8f92b
