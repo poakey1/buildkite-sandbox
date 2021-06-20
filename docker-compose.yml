@@ -1,0 +1,10 @@
+version: '3.6'
+
+services:
+  jfrog:
+    image: docker.bintray.io/jfrog/jfrog-cli-go
+    volumes:
+        - .:/work
+    working_dir: /work
+    environment: 
+        - JFROG_CLI_OFFER_CONFIG=false
