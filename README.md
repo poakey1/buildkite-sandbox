@@ -8,4 +8,4 @@ To start the buildkite agent locally run `docker-compose run --rm buildkite-agen
 
 ### Running locally :-
 To upload a dummy file to artifactory run `make upload`
-To delte the dummy file (and it's parent folder) run `make delete`
+To delete the dummy file (and it's parent folder) run `make delete`
